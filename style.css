@@ -1,10 +1,126 @@
 body {
   margin: 0;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+p {
+  font-size: 1.5em;
+  color: red;
+}
 .box0 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 1px black;
+  color: antiquewhite;
+}
+.box1 {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.box2 {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.box3 {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+button {
+  font-size: 1em;
+  height: 50px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #96ffad;
+  background-color: #7b2291;
+  cursor: url("./skeletonPointer.png"), auto;
+}
+.pump {
+  background: none;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: none;
+  cursor: url("./skeletonPointer.png"), auto;
+  z-index: 1;
+}
+.contain {
+  border: #7b2291 solid 1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.anil {
+  width: 300px;
+  height: 300px;
+  border: #96ffad solid 1px;
+  flex-grow: 1;
+  animation: CookieMonster;
+}
+.anir {
+  width: 300px;
+  height: 300px;
+  border: #96ffad solid 1px;
+  flex-grow: 1;
+}
+.btntxt {
+  font-size: 1em;
+  color: #96ffad;
+}
+.monimg {
+  opacity: 0;
+}
+
+@keyframes CookieMonster {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  10% {
+    opacity: 1;
+    scale: 0.3;
+  }
+  20% {
+    opacity: 1;
+    scale: 0.6;
+  }
+  30% {
+    opacity: 1;
+    scale: 1;
+  }
+  40% {
+    opacity: 1;
+    scale: 1;
+  }
+  50% {
+    opacity: 1;
+    scale: 1;
+  }
+  60% {
+    opacity: 1;
+    scale: 1;
+  }
+  70% {
+    opacity: 1;
+    scale: 1;
+  }
+  80% {
+    opacity: 1;
+    scale: 0.6;
+  }
+  90% {
+    opacity: 1;
+    scale: 0.3;
+  }
+  100% {
+    opacity: 1;
+    scale: 0;
+  }
 }

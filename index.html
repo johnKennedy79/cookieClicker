@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incremental Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="box0">
+      <h1>Halloween Cookie Army</h1>
+      <h2>
+        Help Count Cookie to build his army of vampire pumpkin cookies ready to
+        fight the trick or treat hords
+      </h2>
+    </div>
+    <div class="box1">
+      <p>You have</p>
+      <p id="count-cookie">0</p>
+      <p>Count Cookies you have in your army</p>
+    </div>
+    <div class="box2">
+      <p>You are making</p>
+      <p id="cps-display">1</p>
+      <p>Count cookies per secound</p>
+    </div>
+    <div class="box3">
+      <p>you have</p>
+      <p id="handDisplay">1</p>
+      <p>hands to click the Count Cookie clicker with</p>
+    </div>
+    <button id="cookieBtn"><img src="./pumpkinCookie.png" /></button>
+    <button id="hand">
+      Grow an extra hand! increase the number of cookies you get with every
+      click by 1 this costs 10 cookies
+    </button>
+    <button id="x10">
+      Get a Zombie to help you! Increase your cookies per secound by 10 this
+      costs 100 cookies
+    </button>
+  </body>
+</html>

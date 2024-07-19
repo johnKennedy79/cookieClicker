@@ -60,6 +60,10 @@ button {
   border: none;
   cursor: url("./skeletonPointer.png"), auto;
   z-index: 1;
+  transition: 1s ease-in-out;
+}
+.spin {
+  transform: rotateZ(360deg);
 }
 .contain {
   border: #7b2291 solid 1px;

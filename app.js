@@ -8,6 +8,7 @@ const handDisplay = document.getElementById("handDisplay");
 const hand = document.getElementById("hand");
 const monimgani = document.getElementById("monimgani");
 const zomimgani = document.getElementById("zomimgani");
+const pump = document.getElementById("vamp");
 //state variables including recal from local storage
 let cookies = localStorage.getItem("countCookie")
   ? parseInt(localStorage.getItem("countCookie"))
@@ -36,6 +37,7 @@ setInterval(increaseCookies, 1000);
 function clickCookie() {
   cookies++ * hands;
   countCookie.textContent = cookies;
+  pump.classList.toggle("spin");
 }
 //add listener to button
 cookieBtn.addEventListener("click", clickCookie);

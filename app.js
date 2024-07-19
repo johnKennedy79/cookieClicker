@@ -6,7 +6,8 @@ const x10Btn = document.getElementById("x10");
 const x100Btn = document.getElementById("x100");
 const handDisplay = document.getElementById("handDisplay");
 const hand = document.getElementById("hand");
-const monimg = document.querySelector("monimg");
+const monimgani = document.getElementById("monimgani");
+const zomimgani = document.getElementById("zomimgani");
 //state variables including recal from local storage
 let cookies = localStorage.getItem("countCookie")
   ? parseInt(localStorage.getItem("countCookie"))
@@ -41,7 +42,7 @@ cookieBtn.addEventListener("click", clickCookie);
 x10Btn.addEventListener("click", multi10);
 hand.addEventListener("click", growAHand);
 x100Btn.addEventListener("click", monster);
-
+// localStorage.removeItem("");
 // TODO Store the number of cookies and cps in local storage
 // add local storage set item when returning from local storage get item it returns as a string so you need to parse the value back into an intager or return to 0 if no data stored.
 
@@ -56,6 +57,10 @@ function multi10() {
     cps = cps + 10;
     cpsDisplay.textContent = cps;
     localStorage.setItem("cps", cps);
+    zomimgani.classList.add("zomimg");
+    setTimeout(function () {
+      zomimgani.classList.remove("zomimg");
+    }, 15000);
   }
 }
 // add cps value to local storage and recall it
@@ -80,12 +85,12 @@ function monster() {
     cps = cps + 100;
     cpsDisplay.textContent = cps;
     localStorage.setItem("cps", cps);
-    monimg.style.animation = "CookieMonster 15s";
+    monimgani.classList.add("monimg");
     setTimeout(function () {
       cps = cps - 100;
       cpsDisplay.textContent = cps;
       localStorage.setItem("cps", cps);
-      monimg.style.animation = "CookieMonster 15s";
+      monimgani.classList.remove("monimg");
     }, 15000);
   }
 }

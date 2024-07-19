@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap");
 body {
   margin: 0;
   background-color: #1e1e1e;
@@ -5,6 +6,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Ga Maamli", sans-serif;
 }
 p {
   font-size: 1.5em;
@@ -19,20 +21,28 @@ p {
 .box1 {
   display: flex;
   justify-content: center;
-  column-gap: 20px;
+  column-gap: 1em;
 }
 .box2 {
   display: flex;
   justify-content: center;
-  column-gap: 20px;
+  column-gap: 1em;
 }
 .box3 {
   display: flex;
   justify-content: center;
-  column-gap: 20px;
+  column-gap: 1em;
+}
+h1,
+h2,
+#count-cookie,
+#cps-display,
+#handDisplay {
+  color: #96ffad;
 }
 button {
   font-size: 1em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   height: 50px;
   width: 900px;
   display: flex;
@@ -60,36 +70,90 @@ button {
 .anil {
   width: 300px;
   height: 300px;
-  border: #96ffad solid 1px;
   flex-grow: 1;
-  animation: CookieMonster;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .anir {
   width: 300px;
   height: 300px;
-  border: #96ffad solid 1px;
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btntxt {
   font-size: 1em;
   color: #96ffad;
 }
+
 .monimg {
+  animation: CookieMonster 15s;
+}
+#monimgani {
   opacity: 0;
 }
-
 @keyframes CookieMonster {
   0% {
     opacity: 0;
     scale: 0;
+    transform: rotatez(15deg);
+  }
+  2.5% {
+    opacity: 1;
+    scale: 0.1;
+    transform: rotatez(-15deg);
+  }
+  5% {
+    opacity: 1;
+    scale: 0.2;
+    transform: rotatez(15deg);
+  }
+  7.5% {
+    opacity: 1;
+    scale: 0.3;
+    transform: rotatez(-15deg);
   }
   10% {
     opacity: 1;
-    scale: 0.3;
+    scale: 0.4;
+    transform: rotatez(15deg);
+  }
+  12.5% {
+    opacity: 1;
+    scale: 0.5;
+    transform: rotatez(-15deg);
+  }
+  15% {
+    opacity: 1;
+    scale: 0.6;
+    transform: rotatez(15deg);
+  }
+  17.5% {
+    opacity: 1;
+    scale: 0.7;
+    transform: rotatez(-15deg);
   }
   20% {
     opacity: 1;
-    scale: 0.6;
+    scale: 0.8;
+    transform: rotatez(15deg);
+  }
+  22.5% {
+    opacity: 1;
+    scale: 0.9;
+    transform: rotatez(-15deg);
+  }
+  25% {
+    opacity: 1;
+    scale: 1;
+    transform: rotatez(15deg);
+  }
+  27.5% {
+    opacity: 1;
+    scale: 1;
+    transform: rotatez(0deg);
   }
   30% {
     opacity: 1;
@@ -111,16 +175,219 @@ button {
     opacity: 1;
     scale: 1;
   }
+  72.5% {
+    opacity: 1;
+    scale: 1;
+    transform: rotateZ(0deg);
+  }
+  75% {
+    opacity: 1;
+    scale: 1;
+    transform: rotateZ(-15deg);
+  }
+  77.5% {
+    opacity: 1;
+    scale: 0.9;
+    transform: rotateZ(15deg);
+  }
   80% {
     opacity: 1;
+    scale: 0.8;
+    transform: rotateZ(-15deg);
+  }
+  82.5% {
+    opacity: 1;
+    scale: 0.7;
+    transform: rotateZ(15deg);
+  }
+  85% {
+    opacity: 1;
     scale: 0.6;
+    transform: rotateZ(-15deg);
+  }
+  87.5% {
+    opacity: 1;
+    scale: 0.5;
+    transform: rotateZ(15deg);
   }
   90% {
     opacity: 1;
-    scale: 0.3;
+    scale: 0.4;
+    transform: rotateZ(-15deg);
   }
+  92.5% {
+    opacity: 1;
+    scale: 0.3;
+    transform: rotateZ(15deg);
+  }
+
+  95% {
+    opacity: 1;
+    scale: 0.2;
+    transform: rotateZ(-15deg);
+  }
+
+  97.5% {
+    opacity: 1;
+    scale: 0.1;
+    transform: rotateZ(15deg);
+  }
+
   100% {
     opacity: 1;
     scale: 0;
+    transform: rotateZ(-15deg);
+  }
+}
+
+.zomimg {
+  animation: ZombieFriend 15s;
+}
+#zomimgani {
+  opacity: 0;
+}
+@keyframes ZombieFriend {
+  0% {
+    opacity: 0;
+    scale: 0;
+    transform: rotatez(15deg);
+  }
+  2.5% {
+    opacity: 1;
+    scale: 0.1;
+    transform: rotatez(-15deg);
+  }
+  5% {
+    opacity: 1;
+    scale: 0.2;
+    transform: rotatez(15deg);
+  }
+  7.5% {
+    opacity: 1;
+    scale: 0.3;
+    transform: rotatez(-15deg);
+  }
+  10% {
+    opacity: 1;
+    scale: 0.4;
+    transform: rotatez(15deg);
+  }
+  12.5% {
+    opacity: 1;
+    scale: 0.5;
+    transform: rotatez(-15deg);
+  }
+  15% {
+    opacity: 1;
+    scale: 0.6;
+    transform: rotatez(15deg);
+  }
+  17.5% {
+    opacity: 1;
+    scale: 0.7;
+    transform: rotatez(-15deg);
+  }
+  20% {
+    opacity: 1;
+    scale: 0.8;
+    transform: rotatez(15deg);
+  }
+  22.5% {
+    opacity: 1;
+    scale: 0.9;
+    transform: rotatez(-15deg);
+  }
+  25% {
+    opacity: 1;
+    scale: 1;
+    transform: rotatez(15deg);
+  }
+  27.5% {
+    opacity: 1;
+    scale: 1;
+    transform: rotatez(0deg);
+  }
+  30% {
+    opacity: 1;
+    scale: 1;
+  }
+  40% {
+    opacity: 1;
+    scale: 1;
+  }
+  50% {
+    opacity: 1;
+    scale: 1;
+  }
+  60% {
+    opacity: 1;
+    scale: 1;
+  }
+  70% {
+    opacity: 1;
+    scale: 1;
+  }
+  72.5% {
+    opacity: 1;
+    scale: 1;
+    transform: rotateZ(0deg);
+  }
+  75% {
+    opacity: 1;
+    scale: 1;
+    transform: rotateZ(-15deg);
+  }
+  77.5% {
+    opacity: 1;
+    scale: 0.9;
+    transform: rotateZ(15deg);
+  }
+  80% {
+    opacity: 1;
+    scale: 0.8;
+    transform: rotateZ(-15deg);
+  }
+  82.5% {
+    opacity: 1;
+    scale: 0.7;
+    transform: rotateZ(15deg);
+  }
+  85% {
+    opacity: 1;
+    scale: 0.6;
+    transform: rotateZ(-15deg);
+  }
+  87.5% {
+    opacity: 1;
+    scale: 0.5;
+    transform: rotateZ(15deg);
+  }
+  90% {
+    opacity: 1;
+    scale: 0.4;
+    transform: rotateZ(-15deg);
+  }
+  92.5% {
+    opacity: 1;
+    scale: 0.3;
+    transform: rotateZ(15deg);
+  }
+
+  95% {
+    opacity: 1;
+    scale: 0.2;
+    transform: rotateZ(-15deg);
+  }
+
+  97.5% {
+    opacity: 1;
+    scale: 0.1;
+    transform: rotateZ(15deg);
+  }
+
+  100% {
+    opacity: 1;
+    scale: 0;
+    transform: rotateZ(-15deg);
   }
 }

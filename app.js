@@ -84,12 +84,12 @@ function monster() {
     alert("You do not have enough cookies to buy this yet");
   } else {
     cookies = cookies - 10000;
-    cps = cps + 100;
+    cps = cps + 1000;
     cpsDisplay.textContent = cps;
     localStorage.setItem("cps", cps);
     monimgani.classList.add("monimg");
     setTimeout(function () {
-      cps = cps - 100;
+      cps = cps - 1000;
       cpsDisplay.textContent = cps;
       localStorage.setItem("cps", cps);
       monimgani.classList.remove("monimg");

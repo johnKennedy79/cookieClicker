@@ -15,7 +15,7 @@ the first up grade haleping hand costs 100 cookies and increases the number of c
 
 the zombie frend costs 1000 cookies and increases the cookies per secound by 10
 
-and the cookie monster costs 10000 cokkies and increases the cookies per secound by 100 but only lasts for 15 secounds before it times out
+and the cookie monster costs 10000 cokkies and increases the cookies per secound by 1000 but only lasts for 15 secounds before it times out
 when the zombie and the cookie monster upgrades are clicked they start a keyframe animation. the number of upgrades are also recorded in local storage except for the monster which as I said times out
 
 the hardest part for me was retreaving local storage so that it could be used and adding the value to the display when it was retrieved but I was able to do this with some help and will now remember that when the data is returned from local storage it is always in a string form like json objects and needs to be parsed.
